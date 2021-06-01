@@ -8,9 +8,9 @@ try{
         
         stage('Preparation'){
             echo "Preparing the Jenkins environment with required tools..."
-            mavenHome = tool name: 'maven 3', type: 'maven'
+            mavenHome = tool name: 'Maven_1', type: 'maven'
             mavenCMD = "${mavenHome}/bin/mvn"
-            docker = tool name: 'docker', type: 'org.jenkinsci.plugins.docker.commons.tools.DockerTool'
+            docker = tool name: 'Docker', type: 'org.jenkinsci.plugins.docker.commons.tools.DockerTool'
             dockerCMD = "$docker/bin/docker"
         }
         
