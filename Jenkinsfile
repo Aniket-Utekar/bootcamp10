@@ -16,7 +16,7 @@ try{
         
         stage('git checkout'){
             echo "Checking out the code from git repository..."
-            git 'https://www.github.com/shubhamkushwah123/bootcamp10.git'
+            git 'https://www.github.com/Aniket-Utekar/bootcamp10.git'
         }
         
         stage('Build, Test and Package'){
@@ -41,7 +41,7 @@ try{
         
         stage('Build Docker Image'){
             echo "Building docker image for addressbook application ..."
-            sh "${dockerCMD} build -t shubhamkushwah123/addressbook:${tagName} ."
+            sh "${dockerCMD} build -t aniketute/addressbook:${tagName} ."
         }
         
         stage("Push Docker Image to Docker Registry"){
