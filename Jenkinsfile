@@ -41,7 +41,7 @@ try{
         
         stage('Build Docker Image'){
             echo "Building docker image for addressbook application ..."
-            sh '"${dockerCMD} build -t aniketute/addressbook:${tagName} ."
+            sh "${dockerCMD} build -t aniketute/addressbook:${tagName} ."
         }
         
         stage("Push Docker Image to Docker Registry"){
