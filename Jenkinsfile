@@ -16,7 +16,7 @@ try{
         
         stage('git checkout'){
             echo "Checking out the code from git repository..."
-            git 'https://www.github.com/Aniket-Utekar/bootcamp10.git'
+            git 'https://www.github.com/shubhamkushwah123/bootcamp10.git'
         }
         
         stage('Build, Test and Package'){
